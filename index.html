@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+        }
+        input[type="text"], input[type="number"] {
+            width: 200px;
+        }
+        input[type="submit"] {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de compras</h1>
+    <form id="form">
+        <p>Código de barra: <input type="text" id="codigo" required></p>
+        <p>Nome do item: <input type="text" id="name" required></p>
+        <p>Preço: <input type="number" id="preco" min="0" step="0.01" required></p>
+        <input type="submit" value="Adicionar">
+    </form>
+    <table id="table">
+        <tr>
+            <th>Código de barra</th>
+            <th>Nome do item</th>
+            <th>Preço</th>
+            <th>Comprado</th>
+            <th>Ações</th>
+        </tr>
+    </table>
+    <script src="lista.js"></script>
+    <script src="index.js"></script>
+    
+</body>
+</html>
